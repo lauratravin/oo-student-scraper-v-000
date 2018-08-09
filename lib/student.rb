@@ -12,7 +12,9 @@ class Student
   end
 
   def self.create_from_collection(students_array)
-           Student.new(studenst_array)
+        studenst_array.each { |chr|
+           Student.new(chr)
+           }
   end
 
   def add_student_attributes(attributes_hash)
