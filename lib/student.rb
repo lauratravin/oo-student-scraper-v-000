@@ -21,7 +21,7 @@ class Student
   def add_student_attributes(attributes_hash)
                attributes_hash.each{|k,v|
 
-                  @twitter=  v if k == twitter
+                  @twitter=  v if k == twitter.to_s
 binding.pry
                   @linkedin= chr[:linkedin] if chr[:linkedin]
                   @github= chr[:github] if chr[:github]
