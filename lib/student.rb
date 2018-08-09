@@ -12,8 +12,8 @@ class Student
   end
 
   def self.create_from_collection(students_array)
-    @st = studenst_array
-      @st.each { |chr|
+
+      student_array.each { |chr|
            Student.new(chr)
            }
   end
