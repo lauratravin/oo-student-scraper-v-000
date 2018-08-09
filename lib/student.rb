@@ -20,7 +20,7 @@ class Student
 
   def add_student_attributes(attributes_hash)
                attributes_hash.each{|k,v|
-                 binding.pry
+                
                                self.send(k.to_s+"=",v)
                   # @twitter=  v if k.to_s == "twitter"
                   #
