@@ -23,9 +23,9 @@ class Student
 
                   @twitter=  v if k.to_s == "twitter"
 
-                  @linkedin= chr[:linkedin] if chr[:linkedin]
-                  @github= chr[:github] if chr[:github]
-                  @blog= chr[:blog] if chr[:blog]
+                  @linkedin= v if k.to_s == "linkedin"
+                  @github= v if k.to_s == "github"
+                  @blog=v if k.to_s == "blog"
                   @profile_quote= chr[:profile_quote]
                   @bio= chr[:bio]
                }
