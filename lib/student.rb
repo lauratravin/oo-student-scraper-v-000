@@ -19,7 +19,14 @@ class Student
   end
 
   def add_student_attributes(attributes_hash)
-
+               attributes_hash.each{|chr|
+                  @twitter=  chr[:twitter] if chr[:twitter]
+                  @linkedin= chr[:linkedin] if chr[:linkedin]
+                  @github= chr[:github] if chr[:github]
+                  @blog= chr[:blog] if chr[:blog]
+                  @profile_quote= chr[:profile_quote] 
+                  @bio= chr[:bio]
+               }
   end
 
   def self.all
